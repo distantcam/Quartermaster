@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quatermaster", "Quatermaster\Quatermaster.csproj", "{9F225CDE-FD64-4FC6-9A3E-147E7BFCEDE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartermaster", "Quartermaster\Quartermaster.csproj", "{9F225CDE-FD64-4FC6-9A3E-147E7BFCEDE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

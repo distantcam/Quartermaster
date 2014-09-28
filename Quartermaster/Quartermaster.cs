@@ -3,17 +3,14 @@ using Anotar.Custom;
 using UnityEngine;
 
 [KSPAddon(KSPAddon.Startup.EditorAny, false)]
-class Quatermaster : MonoBehaviour
+class Quartermaster : MonoBehaviour
 {
-    private Rect filterLocation;
     private string filterString = "";
 
     [LogToErrorOnException]
     public void Start()
     {
-        filterLocation = new Rect(60, Screen.height - 92, EditorPanels.Instance.partsPanelWidth - 146, 20);
-
-        EditorPartList.Instance.ExcludeFilters.AddFilter(new EditorPartListFilter("QUATERMASTER_FILTER", Filter));
+        EditorPartList.Instance.ExcludeFilters.AddFilter(new EditorPartListFilter("QUARTERMASTER_FILTER", Filter));
     }
 
     [LogToErrorOnException]
@@ -25,7 +22,7 @@ class Quatermaster : MonoBehaviour
         if (EditorLogic.fetch.editorScreen != EditorLogic.EditorScreen.Parts)
             return;
 
-        var returnFilter = GUI.TextField(filterLocation, filterString);
+        var returnFilter = GUI.TextField(new Rect(60, Screen.height - 92, EditorPanels.Instance.partsPanelWidth - 146, 20), filterString);
 
         if (returnFilter != filterString)
         {

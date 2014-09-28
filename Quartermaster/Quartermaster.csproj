@@ -7,11 +7,11 @@
     <ProjectGuid>{9F225CDE-FD64-4FC6-9A3E-147E7BFCEDE5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Quatermaster</RootNamespace>
-    <AssemblyName>Quatermaster</AssemblyName>
+    <RootNamespace>Quartermaster</RootNamespace>
+    <AssemblyName>Quartermaster</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>3f9d3b5f</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>e8c2f3b4</NuGetPackageImportStamp>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logging.cs" />
-    <Compile Include="Quatermaster.cs" />
+    <Compile Include="Quartermaster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,9 +64,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Fody.1.25.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.25.0\build\Fody.targets'))" />
-    <Error Condition="!Exists('..\packages\GitVersionTask.1.2.0\Build\GitVersionTask.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GitVersionTask.1.2.0\Build\GitVersionTask.targets'))" />
+    <Error Condition="!Exists('..\packages\GitVersionTask.1.3.0\Build\GitVersionTask.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GitVersionTask.1.3.0\Build\GitVersionTask.targets'))" />
   </Target>
-  <Import Project="..\packages\GitVersionTask.1.2.0\Build\GitVersionTask.targets" Condition="Exists('..\packages\GitVersionTask.1.2.0\Build\GitVersionTask.targets')" />
+  <Import Project="..\packages\GitVersionTask.1.3.0\Build\GitVersionTask.targets" Condition="Exists('..\packages\GitVersionTask.1.3.0\Build\GitVersionTask.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
