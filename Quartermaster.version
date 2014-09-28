@@ -1,0 +1,23 @@
+{
+	"NAME":"Quartermaster",
+	"URL":"https://raw.githubusercontent.com/distantcam/Quartermaster/master/Quartermaster.version",
+	"GITHUB":
+    {
+        "USERNAME":"distantcam",
+        "REPOSITORY":"Quartermaster",
+        "ALLOW_PRE_RELEASE":false,
+    },
+	"VERSION":
+	{
+		"MAJOR":0,
+		"MINOR":1,
+		"PATCH":1,
+		"BUILD":0
+	},
+	"KSP_VERSION":
+	{
+		"MAJOR":0,
+		"MINOR":24,
+		"PATCH":2
+	}
+}
